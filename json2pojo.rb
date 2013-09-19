@@ -63,12 +63,11 @@ class Configuration
     # Annotations and imports to put in the Java code based on Jackson.
     # If you want pure POJOs with no annotations, empty these properties.
     #
-    self.ignore_unknown_properties_annotation = "@JsonIgnoreProperties(ignoreUnknown = true)"
-    self.ignore_unknown_properties_import = "import org.codehaus.jackson.annotate.JsonIgnoreProperties;"
+    self.ignore_unknown_properties_annotation = ""
+    self.ignore_unknown_properties_import = ""
 
-    self.json_property_import = "import org.codehaus.jackson.annotate.JsonProperty;"
-    self.json_serialize_import = "import org.codehaus.jackson.map.annotate.JsonSerialize;\n" +
-                 "import org.codehaus.jackson.map.annotate.JsonSerialize.Inclusion;"
+    self.json_property_import = ""
+    self.json_serialize_import = ""
 
     self.field_suffix = ""
     self.field_prefix = ""
